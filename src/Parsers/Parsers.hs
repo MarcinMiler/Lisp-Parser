@@ -1,8 +1,10 @@
 module Parsers.Parsers where
 
-import Data.LispVal
-import Text.ParserCombinators.Parsec hiding (spaces)
 import Control.Monad
+
+import Data.Lisp
+
+import Text.ParserCombinators.Parsec hiding (spaces)
 
 spaces :: Parser ()
 spaces = skipMany1 space

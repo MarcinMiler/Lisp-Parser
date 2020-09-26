@@ -16,17 +16,12 @@ build-type:          Simple
 
 executable Lisp
   main-is:             Repl.hs
-  other-modules:       Data.LispVal
-                     , Data.LispError
+  other-modules:       Data.Lisp
                      , Parsers.Parsers
   -- other-extensions:
   build-depends:       base >=4.13 && <4.14,
-                       scotty == 0.12,
-                       wai,
-                       wai-cors,
                        parsec == 3.1.14.0,
                        mtl == 2.2.2,
-                       aeson,
                        text
 
   hs-source-dirs:      src
